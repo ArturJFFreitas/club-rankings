@@ -29,15 +29,24 @@ def create_or_update_release(
 
   if release is None:
     try:
-      release = repo.create_git_release(
-        tag=tag, 
-        name=tag, 
-        message=description
-      )
-      print(f'New release created: {release.tag_name}')
+        release = repo.create_git_release(
+            tag=tag,
+            name=tag,
+            message=description
+        )
+        print(f'New release created: {release.tag_name}')
+
+        # Prepare the CSV for upload
+        combined_data = df
+        combined_data.drop_duplicates(inplace=True)
+
+        csv_file = StringIO()
+        combined_data.to_csv(csv_file, index=False)
+        file_content = csv_file.getvalue().encode()
+
     except GithubException as e:
-      print(f'Error creating release: {e}')
-      return
+        print(f'Error creating release: {e}')
+        return
   else:
     try:      
       existing_data_file = None
