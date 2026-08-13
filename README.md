@@ -107,3 +107,5 @@ compared_rankings |>
 | Leicester City          |        83 |           44 |        81.8 |         1722.5 |
 | Sheffield United        |        91 |           89 |        81.2 |         1630.8 |
 
+> [!NOTE]
+> Author: [@tonyelhabr](https://github.com/tonyelhabr)
