@@ -1,6 +1,6 @@
 <!-- badges: start -->
 
-[![scrape](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml) [![compare](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml) ![club-rankings downloads](https://img.shields.io/github/downloads/tonyelhabr/club-rankings/total)
+[![scrape](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml) [![compare](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml) ![club-rankings downloads](https://img.shields.io/github/downloads/ArturJFFreitas/club-rankings/total)
 
 <!-- badges: end -->
 
