@@ -1,14 +1,14 @@
 <!-- badges: start -->
 
-[![scrape](https://github.com/tonyelhabr/club-rankings/actions/workflows/scrape.yml/badge.svg)](https://github.com/tonyelhabr/club-rankings/actions/workflows/scrape.yml) [![compare](https://github.com/tonyelhabr/club-rankings/actions/workflows/compare.yml/badge.svg)](https://github.com/tonyelhabr/club-rankings/actions/workflows/compare.yml) ![club-rankings downloads](https://img.shields.io/github/downloads/tonyelhabr/club-rankings/total)
+[![scrape](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/scrape.yml) [![compare](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml/badge.svg)](https://github.com/ArturJFFreitas/club-rankings/actions/workflows/compare.yml) ![club-rankings downloads](https://img.shields.io/github/downloads/tonyelhabr/club-rankings/total)
 
 <!-- badges: end -->
 
 ## Introduction
 
-This repo scrapes and stores the club rankings published by [Opta Analyst](https://theanalyst.com/na/2023/03/who-are-the-best-football-team-in-the-world-opta-power-rankings/) and [Club Elo](http://clubelo.com/). ([FiveThirtyEight](https://projects.fivethirtyeight.com/soccer-predictions/global-club-rankings) is no longer scraped since it is effectively defunct.)
+This repo scrapes and stores the club rankings published by [Opta Analyst](https://theanalyst.com/na/2023/03/who-are-the-best-football-team-in-the-world-opta-power-rankings/) and [Club Elo](http://clubelo.com/). 
 
-The data is automatically pushed to [Github releases](https://github.com/tonyelhabr/releases).
+The data is automatically pushed to [Github releases](https://github.com/ArturJFFreitas/club-rankings/releases).
 
 ## Data
 
@@ -68,7 +68,7 @@ Note that Opta teams are used as the "base" for the comparisons. Only Club Elo t
 ```r
 library(readr)
 library(dplyr)
-compared_rankings <- read_csv('https://github.com/tonyelhabr/club-rankings/releases/download/club-rankings/compared-rankings.csv')
+compared_rankings <- read_csv('https://github.com/ArturJFFreitas/club-rankings/releases/download/club-rankings/compared-rankings.csv')
 
 compared_rankings |> 
   filter(country == 'ENG', date == '2023-09-05') |> 
